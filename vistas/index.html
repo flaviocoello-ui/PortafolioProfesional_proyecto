@@ -7,96 +7,218 @@
     <link rel="stylesheet" href="../estilos/home.css" />
   </head>
   <body>
-    <header>
-      <div class="header_contenido">
+    <header class="header">
+      <div class="contenedor header_contenido">
         <div class="header_logo">
-          <a href=""><img src="" alt="logo página repositorio" /></a>
+          <a href="#"><img src="" alt="logo página repositorio" /></a>
         </div>
-        <div class="header_nav">
-          <ul>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Experiencia</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Proyectos</a></li>
+        <nav class="header_nav">
+          <ul class="nav">
+            <li><a href="#sobre_mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
           </ul>
-        </div>
-        <div class="header_button">
-          <button>Iniciar sesión</button>
-          <button>Regístrate</button>
+        </nav>
+        <div class="header_buttons">
+          <button class="btn btn-primario">Iniciar sesión</button>
+          <button class="btn btn-secundario">Regístrate</button>
         </div>
       </div>
     </header>
     <main>
-      <section id="sobre_mi">
-        <div class="info_contenedor">
-          <img class="foto_usuario" src="" alt="foto usuario" />
-          <div class="info_usuario">
-            <p>nombre</p>
-            <p>ubicación-lugar de nacimiento</p>
-            <p>educación</p>
+      <!-- SECCIÓN SOBRE MÍ -->
+      <section id="sobre_mi" class="section">
+        <div class="contenedor">
+          <div class="card profile">
+            <img class="usuario_img" src="" alt="foto usuario" />
+            <div class="usuario_info">
+              <p>nombre</p>
+              <p>ubicación-lugar de nacimiento</p>
+              <p>educación</p>
+            </div>
+            <div><button class="btn sobremi">Más sobre mí +</button></div>
           </div>
-          <div><button>Más sobre mí +</button></div>
         </div>
       </section>
-      <section id="experiencia">
-        <h2>EXPERIENCIA</h2>
-        <div class="experiencia-contenedor">
-          <article class="experiencia-item">
-            <img src="" alt="empresa" class="experiencia-logo" />
-            <div class="experiencia-info">
-              <h3>Desarrollador Web</h3>
-              <p class="empresa">Empresa XYZ</p>
-              <p class="ubicacion">Lima, Perú</p>
-              <p class="tiempo">Ene 2024 - Actualidad</p>
-              <p class="descripcion">
-                Desarrollo de aplicaciones web utilizando JavaScript y Spring
-                Boot.
-              </p>
-            </div>
-          </article>
-          <article class="experiencia-item">
-            <img src="" alt="empresa" class="experiencia-logo" />
-            <div class="experiencia-info">
-              <h3>Desarrollador Web</h3>
-              <p class="empresa">Empresa XYZ</p>
-              <p class="ubicacion">Lima, Perú</p>
-              <p class="tiempo">Ene 2024 - Actualidad</p>
-              <p class="descripcion">
-                Desarrollo de aplicaciones web utilizando JavaScript y Spring
-                Boot.
-              </p>
-            </div>
-          </article>
-          <article class="experiencia-item">
-            <img src="" alt="empresa" class="experiencia-logo" />
-            <div class="experiencia-info">
-              <h3>Desarrollador Web</h3>
-              <p class="empresa">Empresa XYZ</p>
-              <p class="ubicacion">Lima, Perú</p>
-              <p class="tiempo">Ene 2024 - Actualidad</p>
-              <p class="descripcion">
-                Desarrollo de aplicaciones web utilizando JavaScript y Spring
-                Boot.
-              </p>
-            </div>
-          </article>
-          <article class="experiencia-item">
-            <img src="" alt="empresa" class="experiencia-logo" />
-            <div class="experiencia-info">
-              <h3>Desarrollador Web</h3>
-              <p class="empresa">Empresa XYZ</p>
-              <p class="ubicacion">Lima, Perú</p>
-              <p class="tiempo">Ene 2024 - Actualidad</p>
-              <p class="descripcion">
-                Desarrollo de aplicaciones web utilizando JavaScript y Spring
-                Boot.
-              </p>
-            </div>
-          </article>
+      <!-- SECCIÓN EXPERIENCIA -->
+      <section id="experiencia" class="section">
+        <div class="contenedor">
+          <h2 class="section_titulo">EXPERIENCIA</h2>
+          <div class="experiencia">
+            <article class="experiencia_item">
+              <img src="" alt="Empresa" class="experiencia_logo" />
+              <div class="experiencia-info">
+                <h3>Desarrollador Web</h3>
+                <p class="empresa">Empresa XYZ</p>
+                <p class="meta">Ica, Perú Ene 2025 - Dic 2026</p>
+                <p class="descripcion">
+                  Desarrollo de aplicaciones web utilizando JavaScript y Spring
+                  Boot.
+                </p>
+              </div>
+            </article>
+            <article class="experiencia_item">
+              <img src="" alt="Empresa" class="experiencia_logo" />
+              <div class="experiencia-info">
+                <h3>Desarrollador Backend</h3>
+                <p class="empresa">Empresa XYZ</p>
+                <p class="meta">Ica, Perú Ene 2025 - Dic 2026</p>
+                <p class="descripcion">
+                  Desarrollo de aplicaciones web utilizando JavaScript y Spring
+                  Boot.
+                </p>
+              </div>
+            </article>
+            <article class="experiencia_item">
+              <img src="" alt="Empresa" class="experiencia_logo" />
+              <div class="experiencia-info">
+                <h3>Desarrollador Web</h3>
+                <p class="empresa">Empresa XYZ</p>
+                <p class="meta">Ica, Perú Ene 2025 - Dic 2026</p>
+                <p class="descripcion">
+                  Desarrollo de aplicaciones web utilizando JavaScript y Spring
+                  Boot.
+                </p>
+              </div>
+            </article>
+            <article class="experiencia_item">
+              <img src="" alt="Empresa" class="experiencia_logo" />
+              <div class="experiencia-info">
+                <h3>Desarrollador Backend</h3>
+                <p class="empresa">Empresa XYZ</p>
+                <p class="meta">Ica, Perú Ene 2025 - Dic 2026</p>
+                <p class="descripcion">
+                  Desarrollo de aplicaciones web utilizando JavaScript y Spring
+                  Boot.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>PROYECTOS</h2>
+
+      <section id="proyectos" class="section">
+        <div class="contenedor">
+          <h2 class="section_titulo">Proyectos</h2>
+
+          <div class="proyectos">
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+            <article class="proyecto_card">
+              <img src="" alt="Proyecto 1" class="proyecto_image" />
+
+              <div class="proyecto_info">
+                <h3>Sistema de Ventas para ...</h3>
+                <p class="proyecto_description">
+                  Aplicación web para registrar ventas y controlar inventario en
+                  tiempo real.
+                </p>
+                <p class="proyecto_tecnologias">
+                  HTML • CSS • JavaScript • Java • Spring Boot
+                </p>
+
+                <div class="proyecto_actions">
+                  <a href="#" class="btn btn-primario">Ver proyecto</a>
+                  <a href="#" class="btn btn-secundario">Código</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
