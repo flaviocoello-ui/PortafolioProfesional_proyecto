@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio | Mi Nombre</title>
+    <title>Portafolio | Linus Torvalds</title>
     <link rel="stylesheet" href="../estilos/home.css" />
   </head>
   <body>
     <header class="header">
       <div class="contenedor header_contenido">
-        <a href="#inicio" class="header_logo">Mi Portafolio</a>
+        <a href="#inicio" class="header_logo">Linus Torvalds</a>
         <nav class="header_nav">
           <ul class="nav">
             <li><a href="#inicio">Inicio</a></li>
@@ -25,10 +25,10 @@
       <!-- SECCIÓN INICIO -->
       <section id="inicio" class="section hero">
         <div class="contenedor hero_contenido">
-          <img src="" alt="Foto de perfil" class="hero_foto" />
-          <h1 class="hero_nombre">Tu Nombre</h1>
-          <p class="hero_rol">Desarrollador Web</p>
-          <a href="#proyectos" class="btn btn-primario">Ver mis proyectos</a>
+          <img src="" alt="Foto de Linus Torvalds" class="hero_foto" />
+          <h1 class="hero_nombre">Linus Torvalds</h1>
+          <p class="hero_rol">Creador de Linux &amp; Git</p>
+          <a href="#proyectos" class="btn btn-primario">Ver proyectos</a>
         </div>
       </section>
 
@@ -38,21 +38,52 @@
           <h2 class="section_titulo">Sobre mí</h2>
           <div class="sobremi_contenido">
             <div class="sobremi_texto">
-              <p>Soy estudiante de desarrollo web con interés en crear aplicaciones web eficientes y bien diseñadas. Me apasiona aprender nuevas tecnologías y aplicarlas en proyectos reales.</p>
+              <p>Soy un ingeniero de software finlandés-estadounidense, mejor conocido por crear el kernel de Linux en 1991 siendo estudiante universitario, y Git en 2005. Ambos proyectos se convirtieron en pilares fundamentales de la industria tecnológica moderna.</p>
+              <p>Actualmente lidero el desarrollo del kernel de Linux como fellow de la Linux Foundation, supervisando contribuciones de miles de desarrolladores alrededor del mundo.</p>
               <ul class="sobremi_datos">
-                <li><strong>Ubicación:</strong> Ica, Perú</li>
-                <li><strong>Educación:</strong> Universidad XYZ</li>
-                <li><strong>Email:</strong> correo@ejemplo.com</li>
+                <li><strong>Ubicación:</strong> Portland, Oregon, EE. UU.</li>
+                <li><strong>Educación:</strong> Universidad de Helsinki — Maestría en Ciencias de la Computación (1997)</li>
+                <li><strong>Email:</strong> torvalds@linux-foundation.org</li>
               </ul>
             </div>
             <div class="sobremi_habilidades">
               <h3>Habilidades</h3>
-              <ul class="habilidades_lista">
-                <li>HTML &amp; CSS</li>
-                <li>JavaScript</li>
-                <li>Java / Spring Boot</li>
-                <li>Git</li>
-              </ul>
+              <table class="habilidades_tabla">
+                <thead>
+                  <tr>
+                    <th>Tecnología</th>
+                    <th>Categoría</th>
+                    <th>Nivel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>C</td>
+                    <td>Sistemas</td>
+                    <td>Experto</td>
+                  </tr>
+                  <tr>
+                    <td>Linux Kernel</td>
+                    <td>Sistemas operativos</td>
+                    <td>Experto</td>
+                  </tr>
+                  <tr>
+                    <td>Git</td>
+                    <td>Control de versiones</td>
+                    <td>Experto</td>
+                  </tr>
+                  <tr>
+                    <td>Assembly</td>
+                    <td>Bajo nivel</td>
+                    <td>Avanzado</td>
+                  </tr>
+                  <tr>
+                    <td>C++</td>
+                    <td>Backend</td>
+                    <td>Avanzado</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -64,11 +95,11 @@
           <h2 class="section_titulo">Proyectos</h2>
           <div class="proyectos">
             <article class="proyecto_card">
-              <img src="" alt="Sistema de Ventas" class="proyecto_imagen" />
+              <img src="" alt="Linux Kernel" class="proyecto_imagen" />
               <div class="proyecto_info">
-                <h3>Sistema de Ventas</h3>
-                <p class="proyecto_descripcion">Aplicación web para registrar ventas y controlar inventario en tiempo real.</p>
-                <p class="proyecto_tecnologias">HTML • CSS • JavaScript • Spring Boot</p>
+                <h3>Linux Kernel</h3>
+                <p class="proyecto_descripcion">Núcleo de sistema operativo de código abierto iniciado en 1991. Hoy impulsa servidores, smartphones Android, supercomputadoras y la nube.</p>
+                <p class="proyecto_tecnologias">C • Assembly • Make • Bash</p>
                 <div class="proyecto_acciones">
                   <a href="#" class="btn btn-primario">Ver proyecto</a>
                   <a href="#" class="btn btn-secundario">Código</a>
@@ -76,11 +107,11 @@
               </div>
             </article>
             <article class="proyecto_card">
-              <img src="" alt="Proyecto 2" class="proyecto_imagen" />
+              <img src="" alt="Git" class="proyecto_imagen" />
               <div class="proyecto_info">
-                <h3>Nombre del Proyecto</h3>
-                <p class="proyecto_descripcion">Descripción breve del proyecto y qué problema resuelve.</p>
-                <p class="proyecto_tecnologias">HTML • CSS • JavaScript</p>
+                <h3>Git</h3>
+                <p class="proyecto_descripcion">Sistema de control de versiones distribuido creado en 2005 en tan solo dos semanas. Es el estándar mundial para gestión de código fuente.</p>
+                <p class="proyecto_tecnologias">C • Shell • Perl</p>
                 <div class="proyecto_acciones">
                   <a href="#" class="btn btn-primario">Ver proyecto</a>
                   <a href="#" class="btn btn-secundario">Código</a>
@@ -88,14 +119,14 @@
               </div>
             </article>
             <article class="proyecto_card">
-              <img src="" alt="Proyecto 3" class="proyecto_imagen" />
+              <img src="" alt="Linux Foundation" class="proyecto_imagen" />
               <div class="proyecto_info">
-                <h3>Nombre del Proyecto</h3>
-                <p class="proyecto_descripcion">Descripción breve del proyecto y qué problema resuelve.</p>
-                <p class="proyecto_tecnologias">HTML • CSS • Java</p>
+                <h3>Linux Foundation</h3>
+                <p class="proyecto_descripcion">Organización sin fines de lucro que patrocina el desarrollo del kernel de Linux. Linus lidera el desarrollo como fellow desde 2007.</p>
+                <p class="proyecto_tecnologias">C • Linux • Open Source</p>
                 <div class="proyecto_acciones">
-                  <a href="#" class="btn btn-primario">Ver proyecto</a>
-                  <a href="#" class="btn btn-secundario">Código</a>
+                  <a href="#" class="btn btn-primario">Ver más</a>
+                  <a href="#" class="btn btn-secundario">Sitio web</a>
                 </div>
               </div>
             </article>
@@ -108,12 +139,29 @@
         <div class="contenedor">
           <h2 class="section_titulo">Contacto</h2>
           <div class="contacto_contenido">
-            <p>¿Tienes un proyecto en mente o quieres contactarme? Escríbeme.</p>
-            <ul class="contacto_lista">
-              <li>Email: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
-              <li>GitHub: <a href="#">github.com/usuario</a></li>
-              <li>LinkedIn: <a href="#">linkedin.com/in/usuario</a></li>
-            </ul>
+            <div class="contacto_info">
+              <p>¿Quieres contribuir al kernel de Linux o a Git? La mejor forma es a través de las listas de correo oficiales del proyecto.</p>
+              <ul class="contacto_lista">
+                <li>Email: <a href="mailto:torvalds@linux-foundation.org">torvalds@linux-foundation.org</a></li>
+                <li>GitHub: <a href="#">github.com/torvalds</a></li>
+                <li>Mastodon: <a href="#">@torvalds@social.kernel.org</a></li>
+              </ul>
+            </div>
+            <form class="contacto_form">
+              <div class="form_grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+              </div>
+              <div class="form_grupo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" />
+              </div>
+              <div class="form_grupo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primario">Enviar mensaje</button>
+            </form>
           </div>
         </div>
       </section>
@@ -121,7 +169,7 @@
 
     <footer class="footer">
       <div class="contenedor">
-        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Linus Torvalds. Todos los derechos reservados.</p>
       </div>
     </footer>
   </body>

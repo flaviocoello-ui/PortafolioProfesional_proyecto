@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, Arial, sans-serif;
   background-color: #f1f5f9;
   color: #1e293b;
   line-height: 1.6;
@@ -24,7 +24,7 @@ ESTRUCTURA BASE
 }
 
 .section {
-  padding: 60px 0;
+  padding: 64px 0;
 }
 
 .seccion_alt {
@@ -33,10 +33,11 @@ ESTRUCTURA BASE
 
 .section_titulo {
   font-size: 22px;
-  margin-bottom: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
   color: #0f172a;
   border-left: 4px solid #3b82f6;
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
 main {
@@ -54,7 +55,7 @@ HEADER
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .header_contenido {
@@ -67,8 +68,9 @@ HEADER
 .header_logo {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
+  letter-spacing: 0.3px;
 }
 
 .nav {
@@ -81,10 +83,13 @@ HEADER
   color: #94a3b8;
   text-decoration: none;
   font-size: 15px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
 }
 
 .nav a:hover {
   color: white;
+  border-bottom-color: #3b82f6;
 }
 
 /*
@@ -94,12 +99,13 @@ BOTONES
 */
 .btn {
   display: inline-block;
-  padding: 9px 18px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   font-size: 14px;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, Arial, sans-serif;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -128,31 +134,34 @@ HERO / INICIO
 -------------------------------------------------------------------
 */
 .hero {
-  background-color: #0f172a;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   color: white;
   text-align: center;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .hero_foto {
-  width: 120px;
-  height: 120px;
+  display: block;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #3b82f6;
-  margin-bottom: 20px;
+  margin: 0 auto 22px;
   background-color: #1e293b;
+  box-shadow: 0 0 0 4px #3b82f6, 0 0 24px rgba(59, 130, 246, 0.35);
 }
 
 .hero_nombre {
-  font-size: 36px;
+  font-size: 38px;
+  font-weight: 700;
   margin-bottom: 8px;
+  letter-spacing: -0.5px;
 }
 
 .hero_rol {
-  color: #94a3b8;
+  color: #93c5fd;
   font-size: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 /*
@@ -162,7 +171,8 @@ SOBRE MÍ
 */
 .sobremi_contenido {
   display: flex;
-  gap: 40px;
+  gap: 48px;
+  align-items: flex-start;
 }
 
 .sobremi_texto {
@@ -171,40 +181,58 @@ SOBRE MÍ
 
 .sobremi_texto p {
   color: #475569;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .sobremi_datos {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   color: #475569;
 }
 
 .sobremi_habilidades {
-  flex: 1;
+  flex: 1.4;
 }
 
 .sobremi_habilidades h3 {
   font-size: 16px;
+  font-weight: 600;
   margin-bottom: 14px;
   color: #0f172a;
 }
 
-.habilidades_lista {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+/* Tabla de habilidades */
+.habilidades_tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.habilidades_lista li {
+.habilidades_tabla thead tr {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.habilidades_tabla th {
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.habilidades_tabla td {
+  padding: 8px 12px;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.habilidades_tabla tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.habilidades_tabla tbody tr:hover {
   background-color: #eff6ff;
-  color: #1d4ed8;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 14px;
 }
 
 /*
@@ -215,35 +243,38 @@ PROYECTOS
 .proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 22px;
 }
 
 .proyecto_card {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  border-top: 3px solid #3b82f6;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .proyecto_card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .proyecto_imagen {
   width: 100%;
-  height: 180px;
+  height: 175px;
   object-fit: cover;
-  background-color: #e2e8f0;
+  background-color: #dbeafe;
+  display: block;
 }
 
 .proyecto_info {
-  padding: 16px;
+  padding: 18px;
 }
 
 .proyecto_info h3 {
   font-size: 16px;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -256,7 +287,7 @@ PROYECTOS
 .proyecto_tecnologias {
   font-size: 12px;
   color: #94a3b8;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .proyecto_acciones {
@@ -270,16 +301,15 @@ CONTACTO
 -------------------------------------------------------------------
 */
 .contacto_contenido {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-  max-width: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
 }
 
-.contacto_contenido > p {
+.contacto_info p {
   color: #475569;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .contacto_lista {
@@ -299,6 +329,48 @@ CONTACTO
   text-decoration: underline;
 }
 
+/* Formulario */
+.contacto_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form_grupo label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form_grupo input,
+.form_grupo textarea {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: system-ui, Arial, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  outline: none;
+}
+
+.form_grupo input:focus,
+.form_grupo textarea:focus {
+  border-color: #3b82f6;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form_grupo textarea {
+  resize: vertical;
+}
+
 /*
 -------------------------------------------------------------------
 FOOTER
@@ -306,8 +378,8 @@ FOOTER
 */
 .footer {
   background-color: #0f172a;
-  color: #94a3b8;
+  color: #64748b;
   text-align: center;
-  padding: 20px 0;
+  padding: 22px 0;
   font-size: 14px;
 }
