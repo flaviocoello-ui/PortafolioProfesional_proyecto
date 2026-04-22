@@ -83,13 +83,6 @@ HEADER
   color: #94a3b8;
   text-decoration: none;
   font-size: 15px;
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav a:hover {
-  color: white;
-  border-bottom-color: #3b82f6;
 }
 
 /*
@@ -107,6 +100,7 @@ BOTONES
   font-family: system-ui, Arial, sans-serif;
   font-weight: 500;
   text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .btn-primario {
@@ -231,9 +225,6 @@ SOBRE MÍ
   background-color: #f8fafc;
 }
 
-.habilidades_tabla tbody tr:hover {
-  background-color: #eff6ff;
-}
 
 /*
 -------------------------------------------------------------------
@@ -252,12 +243,6 @@ PROYECTOS
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
   border-top: 3px solid #3b82f6;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.proyecto_card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .proyecto_imagen {
@@ -325,9 +310,6 @@ CONTACTO
   text-decoration: none;
 }
 
-.contacto_lista a:hover {
-  text-decoration: underline;
-}
 
 /* Formulario */
 .contacto_form {
